@@ -570,12 +570,13 @@ ul.dropdown-menu {
     line-height: 2em;
 }
 .welcome-right {
-	width: 52%;
-	padding: 5em 0em 3em 0em;
+    width: 52%;
+    margin-top: 5em;
+    /* padding-bottom: 5em; */
     float: left;
     /* background: url(../images/2.jpg) no-repeat 0px 0px; */
     background-size: cover;
-    min-height: 436px;
+    height: 436px;
 }
 .offer{
 	border-top:none;

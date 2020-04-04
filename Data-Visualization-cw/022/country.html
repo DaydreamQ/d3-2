@@ -25,7 +25,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 <script>
 
-    var svgWidth = 750;
+    var svgWidth = 740;
     var svgHeight = 400;
 
     var margin = {top: 20, right: 40, bottom: 80, left: 100};
@@ -111,7 +111,7 @@
                 // Simple Browser Tool Tip
                 .append("title").text(function(data){
                     // Returns number of people ('000')
-                    return "Number of People ('000): " + data.value;
+                    return "Number of People : " + data.value;
                 });
 
                 //var title_name = ""
@@ -193,9 +193,9 @@
 
         //This is for the interactive part
         level.on("mousemove", function(d){
-            var scoll = getScrollTop();
+            
             divTooltip.style("left", d3.event.pageX + "px");
-            divTooltip.style("top", d3.event.pageY - scoll + "px");
+            divTooltip.style("top", d3.event.pageY + "px");
             //divTooltip.style("top", d3.event.pageY+"px");
             divTooltip.style("display", "inline-block");
 
