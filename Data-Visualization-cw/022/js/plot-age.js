@@ -27,7 +27,7 @@ var yAxis = d3.svg.axis()
     .orient("left")
     .tickFormat(d3.format(".2s"));
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select(".chart_age").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -84,7 +84,7 @@ d3.csv("final_data_age.csv", function(error, data) {
                 // Simple Browser Tool Tip
                 .append("title").text(function(data){
                 // Returns number of people ('000')
-                return "Number of People ('000): " + data.value;
+                return "Number of People: " + data.value;
             });
 
             //var title_name = ""
@@ -161,14 +161,15 @@ d3.csv("final_data_age.csv", function(error, data) {
 
     // Create tooltip
     level.call(toolTip);
+   
 
     var divTooltip = d3.select(".level").append("div").attr("class", "toolTip");
 
     //This is for the interactive part
     level.on("mousemove", function(d){
-        var scoll = getScrollTop();
+        // var scoll = d.getScrollTop();
         divTooltip.style("left", d3.event.pageX + "px");
-        divTooltip.style("top", d3.event.pageY - scoll + "px");
+        divTooltip.style("top", d3.event.pageY + "px");
         //divTooltip.style("top", d3.event.pageY+"px");
         divTooltip.style("display", "inline-block");
 
@@ -197,7 +198,4 @@ d3.csv("final_data_age.csv", function(error, data) {
     level.on("mouseout", function(d){
         divTooltip.style("display", "none");
     });
-
-
-
 });

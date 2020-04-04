@@ -548,8 +548,8 @@ ul.dropdown-menu {
 }
 .welcome-left{
     float: left;
-    width: 50%;
-    padding: 3em 5em 3em 14em;
+    width: 48%;
+    padding: 3em 5em 3em 10em;;
 }
 .welcome-left h3,.about-left h3{
 	color: #5BD982;
@@ -570,7 +570,8 @@ ul.dropdown-menu {
     line-height: 2em;
 }
 .welcome-right {
-    width: 50%;
+	width: 52%;
+	padding: 5em 0em 3em 0em;
     float: left;
     /* background: url(../images/2.jpg) no-repeat 0px 0px; */
     background-size: cover;
