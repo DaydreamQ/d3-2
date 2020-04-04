@@ -1,0 +1,100 @@
+.tooltip {
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    padding: 10px;
+    font: 10px sans-serif;
+    color: white;
+    text-align: center;
+    background: black;
+    border: 0;
+    border-radius: 10px;
+}
+
+.axis-text {
+    font-family: sans-serif;
+    font-weight: bold;
+    fill: #551aaf;
+    text-anchor: middle;
+}
+
+.active {
+    font-weight: bold;
+    fill: #000;
+    fill: #551aaf;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+}
+
+.inactive {
+    font-weight: lighter;
+    fill: #551aaf;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+}
+
+.inactive:hover {
+    fill: #e75480;
+    cursor: pointer;
+}
+
+
+/*****************/
+/* For chart_age */
+/*****************/
+.chart_age .legend {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 60%;
+}
+
+.chart_age rect {
+    stroke-width: 2;
+}
+
+.chart_age text {
+    font: 10px sans-serif;
+}
+
+.chart_age .axis text {
+    font: 10px sans-serif;
+}
+
+.chart_age .axis path{
+    fill: none;
+    stroke: #000;
+}
+
+.chart_age .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.chart_age .axis .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+.chart_age .axisHorizontal path{
+    fill: none;
+}
+
+.chart_age .axisHorizontal line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.chart_age .axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+.chart_age .bar {
+    fill: steelblue;
+    fill-opacity: .9;
+}
+
+.chart_age .x.axis path {
+    display: none;
+}

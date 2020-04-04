@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Edible Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- bootstrap-css -->
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- //bootstrap-css -->
+	<!-- css -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- //css -->
+	<!-- fonts -->
+	<link
+		href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+	<!-- //fonts -->
+	<!-- js -->
+	<script src="//d3js.org/d3.v3.min.js"></script>
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>-->
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>-->
+<!--	<script src="js/jquery-1.11.1.min.js"></script>-->
+<!--	<script src="js/modernizr.custom.js"></script>-->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/index.js"></script>
+	<!-- //js -->
+	<!-- start-smoth-scrolling-->
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<style>
+		a{color:#777}
+	</style>
+	<!--//end-smoth-scrolling-->
+</head>
+
+<body>
+	<!--baner-->
+	<div class="banner">
+		<!-- container -->
+		<div class="container">
+			<div class="banner-top">
+				<div class="social">
+					<ul>
+						<li><a href="#" class="facebook"> </a></li>
+						<li><a href="#" class="facebook twitter"> </a></li>
+						<li><a href="#" class="facebook chrome"> </a></li>
+						<li><a href="#" class="facebook dribbble"> </a></li>
+					</ul>
+				</div>
+				<div class="header-top-right">
+					<form>
+						<input type="text" placeholder="Search" required="">
+						<input type="submit" value="">
+						<div class="clearfix"> </div>
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="banner-top-grid">
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+						// Slideshow 4
+						$("#slider3").responsiveSlides({
+							auto: false,
+							pager: true,
+							nav: false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+								$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+							}
+						});
+					});
+				</script>
+				<div id="top" class="callbacks_container-wrap">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-info">
+								<h3>Difference in Educational Attainment of Boston Residents</h3>
+								<p>From 2012 to 2016</p>
+								<div class="banner-buttons">
+									<div class="banner-button white-button">
+										<a href="#">Get started</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!--//baner-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="logo">
+						<h1><a href="index.html">Contents</a></h1>
+					</div>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-center">
+						<!--<li><a href="index.html" class="active">Home</a></li>-->
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#graphs" class="scroll">Graph</a></li>
+						<li><a href="#conclusion" class="scroll">Conclusion</a></li>
+						<li><a href="#references" class="scroll">Reference</a></li>
+						<li><a href="#footer" class="scroll">Contact</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- script-for sticky-nav -->
+	<script>
+		$(document).ready(function () {
+			var navoffeset = $(".top-nav").offset().top;
+			$(window).scroll(function () {
+				var scrollpos = $(window).scrollTop();
+				if (scrollpos >= navoffeset) {
+					$(".top-nav").addClass("fixed");
+				} else {
+					$(".top-nav").removeClass("fixed");
+				}
+			});
+
+		});
+	</script>
+
+	<br>
+	<br>
+	<br>
+	<!-- /script-for sticky-nav -->
+	<!--navigation-->
+	<!-- banner-bottom -->
+	<div id="about" class="about">
+		<!-- container -->
+		<div class="container">
+			<div class="services-info">
+				<h3>About</h3>
+			</div>
+			<div class="services-grids">
+				<div class="col-md-4 services-grid">
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+					</div>
+					<h4>About Boston</h4>
+					<p>Boston is the capital and most populous city of the Commonwealth of Massachusetts in the
+						United States, and one of the 21st most populous city in the world.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-asterisk glyphicon-check" aria-hidden="true"></span>
+					</div>
+					<h4>Topic of the Analysis</h4>
+					<p>This project is an exploration of residents’ educational attainment in Boston, which is conducted
+						from three different dimensions: age, sex and labor force.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-asterisk glyphicon-time" aria-hidden="true"></span>
+					</div>
+					<h4>Aim of the Analysis</h4>
+					<p>The student attempts to present this analysis to help people get a better understanding of
+						the differences in educational attainment among Boston residents.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<!-- Graphs -->
+	<div id="graphs" class="graph">
+		<!-- container -->
+		<div class="container">
+			<div class="services-info">
+				<h3>Graph</h3>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+
+	<br>
+	<br>
+	<div class="welcome">
+		<div class="welcome-left">
+			<h3>By Age</h3>
+			<h4>Analysis:</h4>
+			<p>This figure shows the difference of educational attainment between five age groups of Boston residents.
+				It can be concluded that the population in the age of "45-64" takes the most part of the
+				total. By comparing these age levels, we can see that only small part of citizens do not
+				graduate from high school while most people own a bachelor degree or even higher. The
+				high-school-graduated people and those who have attended some college are basically at same level
+				in four age groups except the group of '25-34'.</p>
+		</div>
+		<div class="welcome-right">
+			<div class="chart_age"></div>
+			<div class="level"></div>
+			<div class="legend"></div>
+			<script src="js/plot-age.js"></script>
+
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+
+
+	<!-- Sex -->
+	<div class="welcome offer">
+		<div class="welcome-left offer-left">
+			<h3>By Sex</h3>
+			<h4>Analysis:</h4>
+			<p>This figure shows the difference of educational attainment between male and female. It can be seen
+				easily that the people who stop studying after graduated from high school stays at the highest level,
+				which followed by the number of people with bachelor degree. The difference of educational attainment
+				between men and women is quite small except the level of 'associated degree', where the number of women
+				is more than twice as much as that of men.</p>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="welcome-right offer-right">
+			<br>
+			<div class="chart_sex"></div>
+			<script src="js/plot-sex.js"></script>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //Sex -->
+
+	<br>
+	<!-- Labor Force-->
+	<div class="welcome new">
+		<div class="welcome-left new-left">
+			<h3>By Labor Force</h3>
+			<h4>Analysis:</h4>
+			<p>This figure shows the difference of educational attainment between employed and unemployed
+				people. There are around 94% of the citizens are employed while the people who don't have jobs
+				take very small part of the whole population. The number of people who own a bachelor degree or
+				higher is quite large (about 1.4 million). The groups of 'high school graduate' and 'some college
+				education' are stay at similar levels. Only few residents state that they never received education
+				above high school. In addition, there are very small fluctuations in different level of educational
+				attainment among the unemployed residents.</p>
+		</div>
+		<div class="welcome-right new-right">
+			<br>
+			<br>
+			<div class="chart_race"></div>
+			<script src="js/plot-labor-force.js"></script>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //Labor Force -->
+	<!-- //Graphs -->
+
+
+	<br>
+	<br>
+	<br>
+	<!-- services -->
+	<div id="conclusion" class="conclusion">
+		<!-- container -->
+		<div class="container">
+			<div class="services-info">
+				<h3>Conclusion</h3>
+				<br>
+				<br>
+				<div class="date">
+					<p>01</p>
+				</div>
+				<p><a href="#">&emsp;This data analysis is conducted from three dimensions, comparing the differences
+					of educational attainment among Boston residents.</a></p>
+				<br>
+				<div class="date">
+					<p>02</p>
+				</div>
+				<p><a href="#">&emsp;Bowen, William G., and T. Aldrich Finegan. “Educational Attainment and Labor Force
+					Participation.” The American Economic Review, vol. 56, no. 1/2, 1966, pp. 567–582. JSTOR.</a></p>
+				<br>
+				<div class="date">
+					<p>03</p>
+				</div>
+				<p><a href="#">&emsp;Statisticalatlas.com, 2020. [Online]. Available:
+					https://www.towncharts.com/Massachusetts/Education/Boston-city-MA-Education-data.html</a></p>
+				<br>
+				<div class="date">
+					<p>04</p>
+				</div>
+				<p><a href="#">&emsp;"DataCommon", Datacommon.mapc.org, 2020. [Online]. Available:
+					https://datacommon.mapc.org/gallery.</a></p>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<!-- services -->
+	<div id="references" class="references">
+		<!-- container -->
+		<div class="container">
+			<div class="services-info">
+				<h3>Reference</h3>
+				<br>
+				<br>
+					<p><a href="#">[1.]&emsp;R. Wojtkiewicz and K. Donato, "Hispanic Educational Attainment: The Effects of Family
+						Background and Nativity", Social Forces, vol. 74, no. 2, p. 559, 1995. Available:
+						10.2307 /2580492</a></p>
+					<p><a href="#">[2.]&emsp;Bowen, William G., and T. Aldrich Finegan. “Educational Attainment and Labor Force
+						Participation.” The American Economic Review, vol. 56, no. 1/2, 1966, pp. 567–582. JSTOR.</a></p>
+					<p><a href="#">[3.]&emsp;Statisticalatlas.com, 2020. [Online]. Available:
+						https://www.towncharts.com/Massachusetts/Education/Boston-city-MA-Education-data.html</a></p>
+					<p><a href="#">[4.]&emsp;"DataCommon", Datacommon.mapc.org, 2020. [Online]. Available:
+						https://datacommon.mapc.org/gallery.</a></p>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //services -->
+
+	<br>
+	<br>
+	<br>
+	<!-- new-bottom -->
+	<div class="new-bottom">
+		<!-- container -->
+		<div class="container">
+			<div class="new-bottom-info">
+				<br>
+				<br>
+				<h2>Be the leader in the industry!</h2>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //new-bottom -->
+
+
+	<!-- footer -->
+	<div id="footer" class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid">
+					<div class="footer-grid-info">
+						<h3>Popular</h3>
+					</div>
+					<div class="footer-grid-list">
+						<h4>Other topics of Boston</h4>
+						<ul>
+							<li><a href="#">Economy</a></li>
+							<li><a href="#">Energy</a></li>
+							<li><a href="#">Land Use</a></li>
+							<li><a href="#">Public Health</a></li>
+							<li><a href="#">Transportation</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<div class="footer-grid-info">
+						<h3>Address</h3>
+					</div>
+					<div class="footer-grid-list">
+						<h4>Location</h4>
+						<p>King's College London,
+							<span>Strand Campus,</span>
+							London, WC2R 2LS
+						</p>
+						<h4>Get In Touch</h4>
+						<p>Telephone : +1 234 567 9871
+							<span>FAX : +1 234 567 9871</span>
+							E-mail : <a>mail@example.com</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<div class="footer-grid-info">
+						<h3>Contact to us</h3>
+					</div>
+					<form class="footer-grid-list">
+						<input type="text" value="Name" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Name';}" required="">
+						<input type="text" value="Email" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" value="Message" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Message';}" required="">
+						<input type="submit" value="Send">
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- container -->
+	</div>
+	<!-- //footer -->
+
+
+	<!-- copyright -->
+	<div class="copyright">
+		<!-- container -->
+		<div class="container">
+			<p>&copy; 2020. Data Visualisation. All rights reserved.</p>
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- //copyright -->
+</body>
+
+
+
+</html>
